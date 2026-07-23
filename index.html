@@ -10,7 +10,7 @@
 <meta property="og:description" content="Ilmainen kartoitus, kyltit ja asennus yhdellä yhteydenotolla. Koko Suomi.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://eaturvallisuus.fi">
-<meta property="og:image" content="https://eaturvallisuus.fi/wp-content/uploads/2023/03/Turvallisuuskyltti-Oy-Valkoinen-333.png">
+<meta property="og:image" content="https://eaturvallisuus.fi/logo.png">
 <link rel="canonical" href="https://eaturvallisuus.fi/">
 <script type="application/ld+json">
 {
@@ -23,7 +23,26 @@
   "email": "tom@eaturvallisuus.fi",
   "areaServed": "FI",
   "foundingDate": "2022",
+  "vatID": "FI33192918",
+  "taxID": "3319291-8",
+  "address": {"@type":"PostalAddress","addressLocality":"Kokkola","addressCountry":"FI"},
   "knowsAbout": ["turvallisuuskyltit","kerrosnumerot","poistumistiemerkinnät","väestönsuojakyltit","palomerkinnät"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Mitä ilmainen kartoitus tarkoittaa käytännössä?","acceptedAnswer":{"@type":"Answer","text":"Käymme kohteessanne ja tarkistamme kaikki turvallisuusmerkinnät: mitä puuttuu, mikä on vanhentunut ja mikä ei täytä nykyvaatimuksia. Saatte selkeän listan ja kiinteän tarjouksen. Kartoitus ei velvoita tilaamaan mitään."}},
+    {"@type":"Question","name":"Miten kartoitus käytännössä tehdään?","acceptedAnswer":{"@type":"Answer","text":"Sovimme ajan etukäteen ja käymme kohteen läpi: porrashuoneet, kellari- ja tekniset tilat, väestönsuoja, autopaikat ja ulkoalueet. Tarkistamme mitä merkintöjä on, mitkä ovat vanhentuneet ja mitä puuttuu. Saatte havainnoista selkeän listan ja kiinteän tarjouksen. Tavallisessa taloyhtiössä kierros kestää noin puolesta tunnista tuntiin."}},
+    {"@type":"Question","name":"Miksi kartoitus on ilmainen?","acceptedAnswer":{"@type":"Answer","text":"Koska kohdetta näkemättä emme voi antaa luotettavaa hintaa — kylttien määrä ja tyyppi vaihtelevat kiinteistöittäin paljon. Arvaamalla tehty tarjous johtaa lisälaskuihin, joten katsomme ensin. Saatte listan puuttuvista merkinnöistä myös siinä tapauksessa ettette tilaa mitään."}},
+    {"@type":"Question","name":"Mitä jälkivalaiseva kyltti tarkoittaa?","acceptedAnswer":{"@type":"Answer","text":"Jälkivalaiseva pinta lataa itseensä valoa normaalivalaistuksessa ja hohtaa pimeässä ilman sähköä. Sähkökatkon tai tulipalon aikana poistumistiemerkinnät pysyvät näkyvissä. Kaikki toimittamamme palomerkinnät ovat jälkivalaisevia."}},
+    {"@type":"Question","name":"Toimitteko myös meidän paikkakunnalla?","acceptedAnswer":{"@type":"Answer","text":"Kyllä — toimimme koko Suomen alueella yhteistyössä isännöintiyritysten kanssa. Ota yhteyttä niin sovitaan kartoitusajankohta."}},
+    {"@type":"Question","name":"Kuinka nopeasti asennus onnistuu?","acceptedAnswer":{"@type":"Answer","text":"Tyypillisesti kartoituksesta valmiiseen asennukseen menee 1–3 viikkoa kohteen koosta riippuen. Sovimme aikataulun aina etukäteen ja pidämme siitä kiinni."}},
+    {"@type":"Question","name":"Kuka vastaa siitä, että kyltit täyttävät määräykset?","acceptedAnswer":{"@type":"Answer","text":"Me. Toimittamamme kyltit ovat voimassa olevien vaatimusten mukaisia, ja kartoituksessa käymme läpi mitä merkintöjä kohteessa lain mukaan pitää olla."}},
+    {"@type":"Question","name":"Mitä asennus maksaa?","acceptedAnswer":{"@type":"Answer","text":"Hinta riippuu kohteen koosta ja kylttien määrästä. Siksi kartoitus on ilmainen — sen jälkeen saatte kiinteän tarjouksen ilman piilokuluja."}}
+  ]
 }
 </script>
 <style>
@@ -80,7 +99,7 @@ nav{position:sticky;top:0;z-index:100;background:var(--green-darker);box-shadow:
 .hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
 .hero-img{border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:0 24px 60px rgba(7,64,42,.14);background:#fff}
 .hero-img img{width:100%}
-.hero-img figcaption{font-size:12.5px;color:#7d8a83;padding:10px 16px;border-top:1px solid var(--line)}
+.hero-img figcaption{font-size:12.5px;color:#5f6b65;padding:10px 16px;border-top:1px solid var(--line)}
 
 /* GLOW DEMO */
 .glow-sec{background:var(--green-darker);color:#fff;padding:84px 0}
@@ -121,10 +140,10 @@ nav{position:sticky;top:0;z-index:100;background:var(--green-darker);box-shadow:
 
 /* KYLTIT */
 .kyltit{background:#fff}
-.k-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin-top:8px}
-.k-tile{background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;padding:20px 14px;text-align:center;transition:all .2s}
+.k-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(178px,1fr));gap:12px;margin-top:8px}
+.k-tile{background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;padding:20px 14px 18px;text-align:center;transition:all .2s}
 .k-tile:hover{border-color:var(--green);background:#fff;box-shadow:0 10px 24px rgba(7,64,42,.08);transform:translateY(-2px)}
-.k-tile .ic{margin-bottom:10px}.k-tile .ic svg{width:46px;height:46px;display:block;margin:0 auto;border-radius:8px;box-shadow:0 2px 6px rgba(7,64,42,.12)}
+.k-tile .ic{margin-bottom:12px;height:66px;display:flex;align-items:center;justify-content:center}.k-tile .ic svg{width:52px;height:52px;border-radius:8px;box-shadow:0 2px 6px rgba(7,64,42,.12)}.k-tile .ic img{max-width:100%;max-height:66px;width:auto;height:auto;object-fit:contain;border-radius:3px;filter:drop-shadow(0 2px 5px rgba(7,64,42,.18))}
 .k-tile .nm{font-size:14px;font-weight:700}
 .k-note{margin-top:28px;display:flex;align-items:center;gap:14px;background:var(--green-darker);color:#fff;border-radius:12px;padding:20px 24px;font-size:15px}
 .k-note .pulse{width:12px;height:12px;border-radius:50%;background:var(--glow);flex-shrink:0;box-shadow:0 0 0 0 rgba(61,220,122,.5);animation:pulse 2s infinite}
@@ -159,12 +178,12 @@ nav{position:sticky;top:0;z-index:100;background:var(--green-darker);box-shadow:
 .tp-card .stars{color:var(--star);letter-spacing:3px;font-size:16px;margin-bottom:12px}
 .tp-card p{font-size:14.5px;color:var(--body);margin-bottom:16px}
 .tp-card .who{font-size:13.5px;font-weight:700}
-.tp-card .what{font-size:12.5px;color:#7d8a83}
+.tp-card .what{font-size:12.5px;color:#5f6b65}
 .demo-tag{display:inline-block;font-size:11px;font-weight:700;color:#9aa6a0;border:1px dashed #c8d2cc;border-radius:5px;padding:2px 8px;margin-left:10px;vertical-align:middle;letter-spacing:.5px}
 
 /* PARTNERS */
 .partners{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:56px 0}
-.partners h2{text-align:center;font-size:15px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#7d8a83;margin-bottom:30px}
+.partners h2{text-align:center;font-size:15px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#5f6b65;margin-bottom:30px}
 .p-logos{display:flex;gap:18px;justify-content:center;align-items:center;flex-wrap:wrap}
 .p-logo{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 28px;font-weight:800;font-size:15px;color:#5a6862;letter-spacing:.3px}
 .p-logo img{height:46px;width:auto}
@@ -190,7 +209,7 @@ nav{position:sticky;top:0;z-index:100;background:var(--green-darker);box-shadow:
 .faq-item.open .faq-q::after{transform:rotate(45deg)}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
 .faq-a p{padding:0 24px 20px;font-size:15px;color:var(--body)}
-.faq-item.open .faq-a{max-height:240px}
+.faq-item.open .faq-a{max-height:700px}
 
 /* CONTACT */
 .contact{background:var(--green-darker);color:#fff}
@@ -208,7 +227,7 @@ nav{position:sticky;top:0;z-index:100;background:var(--green-darker);box-shadow:
 .form-card input:focus,.form-card select:focus,.form-card textarea:focus{outline:2px solid var(--green);border-color:var(--green);background:#fff}
 .form-card textarea{min-height:120px;resize:vertical}
 .form-card .btn{width:100%;margin-top:26px}
-.form-note{font-size:12.5px;color:#7d8a83;margin-top:14px;text-align:center}
+.form-note{font-size:12.5px;color:#5f6b65;margin-top:14px;text-align:center}
 .c-side h3{font-size:18px;font-weight:800;margin-bottom:18px;color:#fff}
 .c-line{display:flex;gap:14px;align-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:16px 20px;margin-bottom:12px}
 .c-line .ic svg{width:20px;height:20px;color:var(--green)}.ic-s svg{width:15px;height:15px;vertical-align:-2px;margin-right:6px;color:var(--green)}
@@ -229,7 +248,7 @@ footer a{color:var(--glow);text-decoration:none}
 <nav>
   <div class="wrap nav-inner">
     <a class="nav-logo" href="#" aria-label="EA-Turvallisuuskyltti Oy">
-      <img src="https://eaturvallisuus.fi/wp-content/uploads/2023/03/Turvallisuuskyltti-Oy-Valkoinen-333.png" alt="EA-Turvallisuuskyltti Oy logo">
+      <img src="logo.png" alt="EA-Turvallisuuskyltti Oy logo">
     </a>
     <div class="nav-links">
       <a href="#kyltit">Kyltit</a>
@@ -260,7 +279,7 @@ footer a{color:var(--glow);text-decoration:none}
       </div>
     </div>
     <figure class="hero-img">
-      <img src="https://eaturvallisuus.fi/wp-content/uploads/2023/03/kyltit2.png" alt="EA-Turvallisuuskyltti Oy:n turvallisuuskylttejä: poistumistie-, väestönsuoja- ja palomerkintäkylttejä">
+      <img src="kyltit2.png" alt="EA-Turvallisuuskyltti Oy:n turvallisuuskylttejä: poistumistie-, väestönsuoja- ja palomerkintäkylttejä">
       <figcaption>Valikoimamme kylttejä — palomerkinnät aina jälkivalaisevina.</figcaption>
     </figure>
   </div>
@@ -326,16 +345,16 @@ footer a{color:var(--glow);text-decoration:none}
     <h2 class="sec-title">Kaikki kiinteistön merkinnät yhdestä paikasta</h2>
     <p class="sec-sub">Uudiskohteisiin ja vanhojen merkintöjen päivitykseen — taloyhtiöt, liikekiinteistöt ja teollisuus.</p>
     <div class="k-grid">
-      <div class="k-tile"><div class="ic"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="100" height="100" rx="10" fill="#1455c0"/><path d="M50 18 C50 18 28 46 28 61 a22 22 0 0 0 44 0 C72 46 50 18 50 18 Z" fill="#fff"/></svg></div><div class="nm">Vesi</div></div>
-      <div class="k-tile"><div class="ic"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="100" height="100" rx="10" fill="#1455c0"/><path d="M52 16 C56 30 72 38 72 58 a22 22 0 0 1 -44 0 C28 46 40 40 42 26 C46 34 52 36 52 16 Z" fill="#fff"/><path d="M50 46 C52 54 60 56 60 64 a10 10 0 0 1 -20 0 C40 58 47 54 50 46 Z" fill="#1455c0"/></svg></div><div class="nm">Lämpö</div></div>
-      <div class="k-tile"><div class="ic"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="100" height="100" rx="10" fill="#ffd100"/><path d="M57 14 L30 56 H46 L42 86 L71 42 H54 Z" fill="#111"/></svg></div><div class="nm">Sähkö</div></div>
-      <div class="k-tile"><div class="ic"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="100" height="100" rx="10" fill="#1455c0"/><path d="M50 18 L82 74 H18 Z" fill="#ff7900"/><path d="M50 36 L69 68 H31 Z" fill="#1455c0"/></svg></div><div class="nm">Väestönsuoja</div></div>
+      <div class="k-tile"><div class="ic"><img src="kyltit/vesi.png" width="496" height="122" loading="lazy" alt="Vesi-merkintäkyltti sulkuventtiilin merkintään"></div><div class="nm">Vesi</div></div>
+      <div class="k-tile"><div class="ic"><img src="kyltit/lampo.png" width="494" height="194" loading="lazy" alt="Lämmönjakohuoneen opastekyltti"></div><div class="nm">Lämpö</div></div>
+      <div class="k-tile"><div class="ic"><img src="kyltit/sahko.png" width="500" height="200" loading="lazy" alt="Sähköpääkeskuksen opastekyltti"></div><div class="nm">Sähkö</div></div>
+      <div class="k-tile"><div class="ic"><img src="kyltit/vaestonsuoja.png" width="472" height="547" loading="lazy" alt="Väestönsuojan merkintäkyltti"></div><div class="nm">Väestönsuoja</div></div>
       <div class="k-tile"><div class="ic"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="100" height="100" rx="10" fill="#00843d"/><text x="50" y="66" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="46" font-weight="800" fill="#fff">12</text></svg></div><div class="nm">Kerrosnumerot</div></div>
-      <div class="k-tile"><div class="ic"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="100" height="100" rx="10" fill="#ffd100"/><circle cx="50" cy="50" r="27" fill="#c8102e"/><rect x="46" y="30" width="8" height="22" rx="4" fill="#fff"/></svg></div><div class="nm">IV-hätäseis</div></div>
-      <div class="k-tile"><div class="ic"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="100" height="100" rx="10" fill="#1455c0"/><path d="M50 18 L80 50 L60 50 L60 82 L40 82 L40 50 L20 50 Z" fill="#fff"/></svg></div><div class="nm">Sininen nuoli</div></div>
-      <div class="k-tile"><div class="ic"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="100" height="100" rx="10" fill="#00843d"/><circle cx="38" cy="26" r="7" fill="#fff"/><path d="M30 38 L44 36 L52 48 L62 50 L62 56 L48 54 L42 46 L38 60 L46 76 L40 80 L30 62 L26 76 L18 74 L26 50 Z" fill="#fff"/><path d="M64 30 H86 V70 H64 V62 H78 V38 H64 Z" fill="#fff"/><path d="M56 46 L70 50 L56 54 Z" fill="#fff"/></svg></div><div class="nm">Poistumistie</div></div>
-      <div class="k-tile"><div class="ic"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="100" height="100" rx="10" fill="#c8102e"/><rect x="40" y="34" width="20" height="44" rx="6" fill="#fff"/><rect x="45" y="24" width="10" height="10" fill="#fff"/><path d="M55 26 L72 18 L72 24 L58 30 Z" fill="#fff"/></svg></div><div class="nm">Sammutin</div></div>
-      <div class="k-tile"><div class="ic"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="100" height="100" rx="10" fill="#c8102e"/><circle cx="50" cy="50" r="24" fill="#fff"/><circle cx="50" cy="50" r="14" fill="#c8102e"/><circle cx="50" cy="50" r="5" fill="#fff"/><path d="M50 74 H82 V80 H50 Z" fill="#fff"/></svg></div><div class="nm">Paloposti</div></div>
+      <div class="k-tile"><div class="ic"><img src="kyltit/iv-hataseis.png" width="338" height="89" loading="lazy" alt="Ilmastoinnin hätä-seis -merkintäkyltti"></div><div class="nm">IV-hätäseis</div></div>
+      <div class="k-tile"><div class="ic"><img src="kyltit/sininen-nuoli.png" width="196" height="192" loading="lazy" alt="Sininen opastenuoli"></div><div class="nm">Sininen nuoli</div></div>
+      <div class="k-tile"><div class="ic"><img src="kyltit/poistumistie.png" width="394" height="199" loading="lazy" alt="Jälkivalaiseva poistumistiekyltti"></div><div class="nm">Poistumistie</div></div>
+      <div class="k-tile"><div class="ic"><img src="kyltit/sammutin.png" width="320" height="319" loading="lazy" alt="Jälkivalaiseva käsisammutinkyltti"></div><div class="nm">Sammutin</div></div>
+      <div class="k-tile"><div class="ic"><img src="kyltit/paloposti.png" width="322" height="320" loading="lazy" alt="Jälkivalaiseva palopostikyltti"></div><div class="nm">Paloposti</div></div>
       <div class="k-tile"><div class="ic"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M50 12 L92 84 H8 Z" fill="#c8102e"/><path d="M50 26 L81 78 H19 Z" fill="#ffd100"/><rect x="46" y="42" width="8" height="20" rx="3" fill="#111"/><circle cx="50" cy="70" r="4.5" fill="#111"/></svg></div><div class="nm">Liikennemerkit</div></div>
       <div class="k-tile"><div class="ic"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="100" height="100" rx="10" fill="#0a3d2e"/><rect x="16" y="30" width="68" height="40" rx="6" fill="none" stroke="#fff" stroke-width="4"/><text x="50" y="63" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="800" fill="#fff">7 A</text></svg></div><div class="nm">Osoitekyltit</div></div>
       <div class="k-tile"><div class="ic"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="100" height="100" rx="10" fill="#00843d"/><rect x="22" y="24" width="56" height="52" rx="4" fill="#fff"/><path d="M22 44 H50 M50 24 V60 M50 60 H78 M36 44 V76" stroke="#00843d" stroke-width="5" fill="none"/><circle cx="64" cy="36" r="6" fill="#c8102e"/></svg></div><div class="nm">Kartat</div></div>
@@ -348,7 +367,7 @@ footer a{color:var(--glow);text-decoration:none}
 <section class="video-sec" id="video">
   <div class="wrap video-grid">
     <div class="vframe" onclick="videoNote()" role="button" tabindex="0" aria-label="Asennusvideo">
-      <div class="vbg"><img src="https://eaturvallisuus.fi/wp-content/uploads/2023/03/kyltit2.png" alt=""></div>
+      <div class="vbg"><img src="kyltit2.png" alt=""></div>
       <div class="vplay"><div class="pbtn"></div></div>
       <div class="vtag" id="vtag">▶ Katso: kohteen kyltitys alusta loppuun (1:24)</div>
     </div>
@@ -415,7 +434,7 @@ footer a{color:var(--glow);text-decoration:none}
   <div class="wrap">
     <h2>Yhteistyössä</h2>
     <div class="p-logos">
-      <div class="p-logo"><img src="https://eaturvallisuus.fi/wp-content/uploads/2023/03/luotettava_kumppani_logo_792x393.png" alt="Luotettava Kumppani -ohjelman jäsen"></div>
+      <div class="p-logo"><img src="luotettava-kumppani.png" alt="Luotettava Kumppani -ohjelman jäsen"></div>
       <!-- Kun oikeita yhteistyökumppaneita on, lisää ne näin:
       <div class="p-logo">Kumppanin Nimi Oy</div>
       -->
@@ -464,6 +483,14 @@ footer a{color:var(--glow);text-decoration:none}
       <div class="faq-item">
         <button class="faq-q">Mitä ilmainen kartoitus tarkoittaa käytännössä?</button>
         <div class="faq-a"><p>Käymme kohteessanne ja tarkistamme kaikki turvallisuusmerkinnät: mitä puuttuu, mikä on vanhentunut ja mikä ei täytä nykyvaatimuksia. Saatte selkeän listan ja kiinteän tarjouksen. Kartoitus ei velvoita tilaamaan mitään.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Miten kartoitus käytännössä tehdään?</button>
+        <div class="faq-a"><p>Sovimme ajan etukäteen ja käymme kohteen läpi: porrashuoneet, kellari- ja tekniset tilat, väestönsuoja, autopaikat ja ulkoalueet. Tarkistamme mitä merkintöjä on, mitkä ovat haalistuneet tai vanhentuneet ja mitä puuttuu kokonaan. Dokumentoimme havainnot ja saatte niistä selkeän listan sekä kiinteän tarjouksen. Tavallisessa taloyhtiössä kierros kestää noin puolesta tunnista tuntiin eikä häiritse asukkaita.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Miksi kartoitus on ilmainen?</button>
+        <div class="faq-a"><p>Koska kohdetta näkemättä emme voi antaa luotettavaa hintaa — kylttien määrä ja tyyppi vaihtelevat kiinteistöittäin paljon. Arvaamalla tehty tarjous on joko liian kallis teille tai liian halpa meille, ja se johtaa lisälaskuihin. Siksi katsomme ensin. Kierros maksaa meille tunnin työtä, ja te saatte joka tapauksessa listan siitä mitä kohteesta puuttuu — myös siinä tapauksessa ettette tilaa meiltä mitään.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Mitä jälkivalaiseva kyltti tarkoittaa?</button>
@@ -515,7 +542,7 @@ footer a{color:var(--glow);text-decoration:none}
         <label for="viesti">Viesti <span class="req">*</span></label>
         <textarea id="viesti" name="Viesti" placeholder="Kerro lyhyesti kohteesta — paikkakunta, kohteen tyyppi ja koko." required></textarea>
         <button class="btn btn-primary" type="submit">Lähetä yhteydenottopyyntö</button>
-        <div class="form-note" id="formNote">Vastaamme yleensä saman arkipäivän aikana.</div>
+        <div class="form-note" id="formNote">Vastaamme yleensä saman arkipäivän aikana. Lähettämällä lomakkeen hyväksyt, että käsittelemme tietojasi <a href="tietosuoja.html" style="color:var(--green);font-weight:700">tietosuojaselosteen</a> mukaisesti.</div>
       </form>
       <div class="c-side">
         <h3>Tai soita suoraan</h3>
@@ -530,9 +557,15 @@ footer a{color:var(--glow);text-decoration:none}
 
 <footer>
   <div class="wrap f-grid">
-    <img src="https://eaturvallisuus.fi/wp-content/uploads/2023/03/Turvallisuuskyltti-Oy-Valkoinen-333.png" alt="EA-Turvallisuuskyltti Oy">
-    <div>© 2026 EA-Turvallisuuskyltti Oy · Perustettu 2022 · Kokemusta alalta 8+ vuotta · Koko Suomi</div>
-    <a href="#yhteys">Pyydä ilmainen kartoitus</a>
+    <img src="logo.png" alt="EA-Turvallisuuskyltti Oy">
+    <div>
+      © 2026 EA-Turvallisuuskyltti Oy · Y-tunnus 3319291-8 · Kotipaikka Kokkola<br>
+      Perustettu 2022 · Kokemusta alalta 8+ vuotta · Palvelemme koko Suomessa
+    </div>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <a href="tietosuoja.html">Tietosuojaseloste</a>
+      <a href="#yhteys">Pyydä ilmainen kartoitus</a>
+    </div>
   </div>
 </footer>
 
